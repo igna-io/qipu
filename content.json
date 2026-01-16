@@ -1,0 +1,79 @@
+{
+    "_instructions": "Edit the text values below. DO NOT change the keys (left side). Save the file and refresh the page to see changes.",
+  
+    "meta": {
+      "title": "QIPU — Estrategia ejecutable de IA",
+      "description": "QIPU ayuda a equipos ejecutivos a convertir la IA en una capacidad operativa real, con impacto medible en eficiencia y P&L."
+    },
+  
+    "header": {
+      "cta_button": "Conectar con QIPU"
+    },
+  
+    "hero": {
+      "badge": "Estrategia Ejecutiva · Implementación de IA",
+      "headline_line1": "Estrategia de IA,",
+      "headline_line2": "diseñada para ejecutarse.",
+      "subheadline": "Ayudamos a equipos ejecutivos a transformar la IA en capacidad operativa real. De la parálisis estratégica a decisiones claras y ejecución con impacto.",
+      "cta_button": "Hablemos"
+    },
+  
+    "features": {
+      "card1": {
+        "title": "Dirección",
+        "description": "Un marco claro para decidir dónde aplicar IA, con qué objetivos y bajo qué límites."
+      },
+      "card2": {
+        "title": "Prioridad",
+        "description": "Un portafolio enfocado de iniciativas, priorizadas por valor, factibilidad y riesgo."
+      },
+      "card3": {
+        "title": "Ejecución",
+        "description": "Un modelo operativo que permite pasar de pilotos a escala sin fricción."
+      }
+    },
+  
+    "sections": {
+      "problema": {
+        "number": "01",
+        "label": "El problema",
+        "headline": "La IA no falla. Fallan las decisiones.",
+        "body": "La mayoría de las organizaciones sabe que la IA es inevitable, pero no tiene un marco unificado para decidir dónde empezar ni cómo escalar. El resultado suele ser el mismo: pilotos aislados, decisiones lentas, costos crecientes y poco impacto real en el negocio."
+      },
+      "que_hacemos": {
+        "number": "02",
+        "label": "Qué hacemos",
+        "headline": "Convertimos intención en capacidad",
+        "items": [
+          "Identificamos dónde la IA puede generar valor tangible en tu operación",
+          "Priorizamos un conjunto acotado de iniciativas con retorno claro y medible",
+          "Diseñamos cómo ejecutarlas dentro de tu modelo operativo, sin inflar equipos"
+        ]
+      },
+      "como_trabajamos": {
+        "number": "03",
+        "label": "Cómo trabajamos",
+        "headline": "Decisiones primero. Implementación después.",
+        "body": "Trabajamos con equipos ejecutivos en un diagnóstico corto y riguroso que desbloquea decisiones clave: qué construir, qué comprar, cómo gobernar y cómo escalar. El foco está en avanzar rápido, con control desde el día uno."
+      },
+      "para_quien": {
+        "number": "04",
+        "label": "Para quién es QIPU",
+        "headline": "Para equipos que necesitan avanzar ahora",
+        "body": "Para organizaciones que necesitan una estrategia de IA coherente, ejecutable y defendible frente al directorio. No para quienes buscan más slides, más pilotos o soluciones desconectadas de su realidad operativa."
+      }
+    },
+  
+    "cta": {
+      "headline": "Si esto resuena, hablemos.",
+      "body": "Una llamada breve para confirmar encaje, madurez y siguientes pasos. Si no somos el partner correcto, te lo diremos con claridad.",
+      "button": "Agendar conversación"
+    },
+  
+    "footer": {
+      "tagline": "Estrategia y ejecución en IA",
+      "copyright": "© 2026 QIPU. Todos los derechos reservados.",
+      "locations": "ECU • BRA • MEX"
+    }
+  }
+  

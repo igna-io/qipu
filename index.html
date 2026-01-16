@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-content="meta.title">QIPU — Estrategia ejecutable de IA</title>
+    <meta
+      name="description"
+      data-content-attr="content:meta.description"
+      content="QIPU ayuda a equipos ejecutivos a convertir la IA en una capacidad real del negocio."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#1A1A1A",
+              fog: "#F7F7F3",
+              stone: "#E7E7E2",
+              "deep-blue": "#0014b0",
+              periwinkle: "#d6e3ff",
+              amber: {
+                300: "#ffb366",
+                400: "#ff9f40",
+                500: "#ff8c42",
+              },
+              orange: {
+                500: "#ff6b35",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="site-grid bg-fog text-ink antialiased">
+    <!-- Fixed Header with Glass Effect -->
+    <header class="dark-header fixed top-0 left-0 right-0 z-50">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+        <a href="/" class="flex items-center">
+          <img src="./qipu_logos/4.png" alt="QIPU" class="h-10 sm:h-14 md:h-[4.5rem]" />
+        </a>
+        <a
+          class="btn-primary text-xs sm:text-sm py-2 px-4 sm:px-5"
+          href="#contacto"
+          data-content="header.cta_button"
+        >
+          Hablar con QIPU
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section with Full-Screen Gradient Mesh -->
+      <section class="hero-section flex items-center justify-center pt-16 sm:pt-20">
+        <!-- Animated Gradient Mesh Background - Multi-color -->
+        <div class="gradient-mesh">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="orb orb-4"></div>
+          <div class="orb orb-5"></div>
+          <div class="orb orb-6"></div>
+        </div>
+
+        <div class="hero-content max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-24 md:py-28 text-center">
+          <!-- Glassmorphism Badge -->
+          <div class="glass-badge mb-10">
+            <span class="dot"></span>
+            <span data-content="hero.badge">Consultora Especializada · Estrategia en IA</span>
+          </div>
+
+          <h1 class="text-4xl md:text-5xl lg:text-7xl font-semibold text-white mb-8 leading-[1.05] tracking-tight">
+            <span data-content="hero.headline_line1">Estrategia de IA,</span><br />
+            <span data-content="hero.headline_line2">diseñada para ejecutarse.</span>
+          </h1>
+
+          <p class="text-white/55 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed" data-content="hero.subheadline">
+            Ayudamos a equipos ejecutivos a convertir la IA en una capacidad real del negocio.
+            Sin pilotos eternos. Sin ruido.
+          </p>
+
+          <a href="#contacto" class="btn-primary text-base" data-content="hero.cta_button">
+            Hablar con QIPU
+          </a>
+        </div>
+      </section>
+
+      <!-- Features Section - Large Typography -->
+      <section class="features-section">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+          <div class="features-typography">
+            <!-- Feature 1 -->
+            <div class="feature-row">
+              <div class="feature-number">01</div>
+              <div class="feature-word" data-content="features.card1.title">Dirección</div>
+              <div class="feature-desc" data-content="features.card1.description">Un marco claro para decidir dónde aplicar IA, con qué objetivos y bajo qué límites.</div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-row">
+              <div class="feature-number">02</div>
+              <div class="feature-word" data-content="features.card2.title">Prioridad</div>
+              <div class="feature-desc" data-content="features.card2.description">Un portafolio enfocado de iniciativas, priorizadas por valor, factibilidad y riesgo.</div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-row">
+              <div class="feature-number">03</div>
+              <div class="feature-word" data-content="features.card3.title">Ejecución</div>
+              <div class="feature-desc" data-content="features.card3.description">Un modelo operativo que permite pasar de pilotos a escala sin fricción.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem Section -->
+      <section id="problema" class="section-divider py-24">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="grid gap-6 sm:max-w-3xl border-l-2 border-deep-blue/20 pl-8">
+            <div class="flex items-center gap-4">
+              <span class="text-deep-blue/30 font-semibold text-sm tracking-wider" data-content="sections.problema.number">01</span>
+              <span class="text-xs uppercase tracking-[0.24em] text-ink/50" data-content="sections.problema.label">El problema</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-semibold text-ink tracking-tight leading-tight" data-content="sections.problema.headline">
+              El problema no es la IA. Es cómo se adopta.
+            </h2>
+            <p class="text-lg leading-relaxed text-ink/60 max-w-2xl" data-content="sections.problema.body">
+              Muchas empresas saben que la IA es clave, pero no tienen claridad sobre por dónde
+              empezar ni cómo escalar. El resultado: pilotos aislados, decisiones lentas y poco
+              impacto real.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Do Section -->
+      <section id="que-hacemos" class="section-divider py-24">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="border-l-2 border-deep-blue/20 pl-8 mb-12">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="text-deep-blue/30 font-semibold text-sm tracking-wider" data-content="sections.que_hacemos.number">02</span>
+              <span class="text-xs uppercase tracking-[0.24em] text-ink/50" data-content="sections.que_hacemos.label">Qué hacemos</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-semibold text-ink tracking-tight" data-content="sections.que_hacemos.headline">Qué hacemos</h2>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-3 sm:pl-8">
+            <!-- Card 1 - Circles pattern -->
+            <div class="geo-card geo-card-1 group">
+              <div class="geo-card-bg">
+                <div class="geo-shape geo-circle-1"></div>
+                <div class="geo-shape geo-circle-2"></div>
+                <div class="geo-shape geo-circle-3"></div>
+                <div class="geo-mesh"></div>
+              </div>
+              <div class="geo-card-content">
+                <span class="geo-card-number">01</span>
+                <p class="geo-card-text" data-content="sections.que_hacemos.items.0">Identificamos dónde la IA puede generar valor tangible en tu operación</p>
+              </div>
+            </div>
+            <!-- Card 2 - Rectangles pattern -->
+            <div class="geo-card geo-card-2 group">
+              <div class="geo-card-bg">
+                <div class="geo-shape geo-rect-1"></div>
+                <div class="geo-shape geo-rect-2"></div>
+                <div class="geo-shape geo-rect-3"></div>
+                <div class="geo-mesh"></div>
+              </div>
+              <div class="geo-card-content">
+                <span class="geo-card-number">02</span>
+                <p class="geo-card-text" data-content="sections.que_hacemos.items.1">Priorizamos un conjunto acotado de iniciativas con retorno claro y medible</p>
+              </div>
+            </div>
+            <!-- Card 3 - Mixed pattern -->
+            <div class="geo-card geo-card-3 group">
+              <div class="geo-card-bg">
+                <div class="geo-shape geo-pill-1"></div>
+                <div class="geo-shape geo-pill-2"></div>
+                <div class="geo-shape geo-square-1"></div>
+                <div class="geo-mesh"></div>
+              </div>
+              <div class="geo-card-content">
+                <span class="geo-card-number">03</span>
+                <p class="geo-card-text" data-content="sections.que_hacemos.items.2">Diseñamos cómo ejecutarlas dentro de tu modelo operativo, sin inflar equipos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How We Work Section -->
+      <section id="como-trabajamos" class="section-divider py-24">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="grid gap-6 sm:max-w-3xl border-l-2 border-deep-blue/20 pl-8">
+            <div class="flex items-center gap-4">
+              <span class="text-deep-blue/30 font-semibold text-sm tracking-wider" data-content="sections.como_trabajamos.number">03</span>
+              <span class="text-xs uppercase tracking-[0.24em] text-ink/50" data-content="sections.como_trabajamos.label">Cómo trabajamos</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-semibold text-ink tracking-tight" data-content="sections.como_trabajamos.headline">Cómo trabajamos</h2>
+            <p class="text-lg leading-relaxed text-ink/60 max-w-2xl" data-content="sections.como_trabajamos.body">
+              En lugar de frameworks teóricos, entregamos decisiones claras. Un diagnóstico corto,
+              enfocado y accionable, diseñado para avanzar rápido sin perder control.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- For Whom Section -->
+      <section id="para-quien" class="section-divider py-24">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="grid gap-6 sm:max-w-3xl border-l-2 border-deep-blue/20 pl-8">
+            <div class="flex items-center gap-4">
+              <span class="text-deep-blue/30 font-semibold text-sm tracking-wider" data-content="sections.para_quien.number">04</span>
+              <span class="text-xs uppercase tracking-[0.24em] text-ink/50" data-content="sections.para_quien.label">Para quién es QIPU</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-semibold text-ink tracking-tight" data-content="sections.para_quien.headline">Para quién es QIPU</h2>
+            <p class="text-lg leading-relaxed text-ink/60 max-w-2xl" data-content="sections.para_quien.body">
+              Para equipos que necesitan un plan de IA coherente y ejecutable. No para quienes buscan
+              más slides, más pilotos o más complejidad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section with Gradient Mesh -->
+      <section id="contacto" class="cta-aurora py-28 md:py-36">
+        <!-- Animated Gradient Mesh Background -->
+        <div class="gradient-mesh">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <h2 class="text-3xl md:text-5xl font-semibold text-white mb-6 leading-tight tracking-tight" data-content="cta.headline">
+            Si esto resuena, conversemos.
+          </h2>
+          <p class="text-white/50 text-lg mb-10 max-w-xl mx-auto leading-relaxed" data-content="cta.body">
+            Una llamada breve para confirmar encaje y siguientes pasos.
+            Si no somos el partner correcto, te lo diremos.
+          </p>
+          <a href="#contacto" class="btn-primary text-base" data-content="cta.button">
+            Agendar conversación
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="dark-footer py-8 sm:py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6 sm:mb-8">
+          <a href="/" class="flex items-center">
+            <img src="./qipu_logos/4.png" alt="QIPU" class="h-8 sm:h-10" />
+          </a>
+          <p class="text-white/40 text-sm" data-content="footer.tagline">Estrategia y ejecución en IA</p>
+        </div>
+        <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p class="text-white/30 text-xs tracking-wide" data-content="footer.copyright">© 2026 QIPU. Todos los derechos reservados.</p>
+          <p class="text-white/40 text-xs tracking-[0.2em] uppercase" data-content="footer.locations">ECU • BRA • MEX</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Content Injection Script -->
+    <script>
+      (async function loadContent() {
+        try {
+          const response = await fetch('./content.json');
+          const content = await response.json();
+          
+          // Helper to get nested value from object using dot notation
+          function getValue(obj, path) {
+            return path.split('.').reduce((acc, part) => {
+              if (acc && typeof acc === 'object') {
+                // Handle array notation like "items.0"
+                return acc[part];
+              }
+              return undefined;
+            }, obj);
+          }
+          
+          // Update all elements with data-content attribute
+          document.querySelectorAll('[data-content]').forEach(el => {
+            const path = el.getAttribute('data-content');
+            const value = getValue(content, path);
+            if (value !== undefined) {
+              el.textContent = value;
+            }
+          });
+          
+          // Update elements with data-content-attr for attributes
+          document.querySelectorAll('[data-content-attr]').forEach(el => {
+            const mapping = el.getAttribute('data-content-attr');
+            const [attr, path] = mapping.split(':');
+            const value = getValue(content, path);
+            if (value !== undefined) {
+              el.setAttribute(attr, value);
+            }
+          });
+          
+          // Update page title
+          const title = getValue(content, 'meta.title');
+          if (title) document.title = title;
+          
+        } catch (error) {
+          console.log('Content loaded from HTML defaults');
+        }
+      })();
+    </script>
+  </body>
+</html>
