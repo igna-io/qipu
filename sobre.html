@@ -42,18 +42,225 @@
       };
     </script>
     <link rel="stylesheet" href="./styles.css" />
+    <style>
+      /* Light Hero Section */
+      .hero-light {
+        position: relative;
+        min-height: 100vh;
+        background: linear-gradient(180deg, #ffffff 0%, var(--fog) 50%, #e8efff 100%);
+        overflow: hidden;
+      }
+
+      .hero-light::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse at center, transparent 0%, transparent 60%, rgba(214, 227, 255, 0.3) 100%);
+        pointer-events: none;
+        z-index: 3;
+      }
+
+      /* Light gradient orbs */
+      .hero-light .gradient-mesh .orb-1 {
+        width: 800px;
+        height: 600px;
+        background: radial-gradient(ellipse, rgba(0, 20, 176, 0.15) 0%, rgba(0, 20, 176, 0.05) 40%, transparent 70%);
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: blur(80px);
+        opacity: 0.9;
+      }
+
+      .hero-light .gradient-mesh .orb-2 {
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(214, 227, 255, 0.8) 0%, rgba(214, 227, 255, 0.3) 40%, transparent 70%);
+        top: 10%;
+        right: -5%;
+        filter: blur(60px);
+        opacity: 0.8;
+      }
+
+      .hero-light .gradient-mesh .orb-3 {
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(255, 140, 66, 0.12) 0%, rgba(255, 140, 66, 0.04) 40%, transparent 70%);
+        top: 30%;
+        left: -10%;
+        filter: blur(100px);
+        opacity: 0.9;
+      }
+
+      .hero-light .gradient-mesh .orb-4 {
+        width: 500px;
+        height: 400px;
+        background: radial-gradient(ellipse, rgba(214, 227, 255, 0.6) 0%, rgba(100, 140, 255, 0.2) 40%, transparent 70%);
+        bottom: -5%;
+        right: 20%;
+        filter: blur(80px);
+        opacity: 0.7;
+      }
+
+      /* Light glass badge */
+      .glass-badge-light {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.625rem;
+        padding: 0.625rem 1.25rem;
+        background: rgba(0, 20, 176, 0.06);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(0, 20, 176, 0.1);
+        border-radius: 9999px;
+        color: var(--deep-blue);
+        font-size: 0.875rem;
+        box-shadow: 
+          0 8px 32px rgba(0, 20, 176, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.5);
+      }
+
+      .glass-badge-light .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--deep-blue) 0%, #4060ff 100%);
+        box-shadow: 0 0 12px rgba(0, 20, 176, 0.4);
+        animation: pulse-dot-light 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse-dot-light {
+        0%, 100% {
+          opacity: 1;
+          box-shadow: 0 0 12px rgba(0, 20, 176, 0.4);
+        }
+        50% {
+          opacity: 0.8;
+          box-shadow: 0 0 20px rgba(0, 20, 176, 0.5), 0 0 40px rgba(0, 20, 176, 0.2);
+        }
+      }
+
+      /* Light header */
+      .light-header {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(0, 20, 176, 0.08);
+      }
+
+      /* Light values section */
+      .values-light {
+        background: #ffffff;
+        position: relative;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+
+      .values-light::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(to right, rgba(0, 20, 176, 0.04) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 20, 176, 0.04) 1px, transparent 1px);
+        background-size: 60px 60px;
+        pointer-events: none;
+      }
+
+      @media (min-width: 768px) {
+        .values-light::before {
+          background-size: 100px 100px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .values-light::before {
+          background-size: 140px 140px;
+        }
+      }
+
+      /* Light feature rows */
+      .values-light .feature-number {
+        color: var(--deep-blue);
+        opacity: 0.3;
+      }
+
+      .values-light .feature-row:hover .feature-number {
+        opacity: 0.6;
+      }
+
+      .values-light .feature-word {
+        color: var(--ink);
+      }
+
+      .values-light .feature-row:hover .feature-word {
+        color: var(--deep-blue);
+      }
+
+      .values-light .feature-desc {
+        color: rgba(26, 26, 26, 0.5);
+      }
+
+      .values-light .feature-row:hover .feature-desc {
+        color: rgba(26, 26, 26, 0.75);
+      }
+
+      /* Dark button for light sections */
+      .btn-dark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2.5rem;
+        background: linear-gradient(135deg, var(--deep-blue) 0%, #000a5c 100%);
+        color: white;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        border-radius: 9999px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 
+          0 4px 20px rgba(0, 20, 176, 0.3),
+          0 0 40px rgba(0, 20, 176, 0.1);
+      }
+
+      .btn-dark:hover {
+        transform: translateY(-3px);
+        box-shadow: 
+          0 8px 30px rgba(0, 20, 176, 0.4),
+          0 0 60px rgba(0, 20, 176, 0.2);
+      }
+
+      /* Founders section with subtle gradient */
+      .founders-section {
+        background: linear-gradient(180deg, var(--fog) 0%, #e8efff 100%);
+        position: relative;
+      }
+
+      .founders-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(to right, rgba(0, 20, 176, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 20, 176, 0.03) 1px, transparent 1px);
+        background-size: 140px 140px;
+        background-position: center top;
+        pointer-events: none;
+      }
+    </style>
   </head>
-  <body class="site-grid bg-fog text-ink antialiased">
-    <!-- Fixed Header with Glass Effect -->
-    <header class="dark-header fixed top-0 left-0 right-0 z-50">
+  <body class="bg-fog text-ink antialiased">
+    <!-- Fixed Header - Light Version -->
+    <header class="light-header fixed top-0 left-0 right-0 z-50">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         <a href="./" class="flex items-center">
-          <img src="./qipu_logos/4.png" alt="QIPU" class="h-10 sm:h-14 md:h-[4.5rem]" />
+          <img src="./qipu_logos/3.png" alt="QIPU" class="h-10 sm:h-14 md:h-[4.5rem]" />
         </a>
         <nav class="flex items-center gap-4 sm:gap-6">
-          <a href="./sobre.html" class="text-white hover:text-white/80 text-sm transition-colors">Sobre Qipu</a>
+          <a href="./sobre.html" class="text-deep-blue/70 hover:text-deep-blue text-sm transition-colors">Sobre Qipu</a>
           <a
-            class="btn-primary text-xs sm:text-sm py-2 px-4 sm:px-5"
+            class="btn-dark text-xs sm:text-sm py-2 px-4 sm:px-5"
             href="./#contacto"
           >
             Hablar con QIPU
@@ -63,8 +270,8 @@
     </header>
 
     <main>
-      <!-- Hero Section - Mission -->
-      <section class="hero-section flex items-center justify-center pt-16 sm:pt-20">
+      <!-- Hero Section - Light Mission -->
+      <section class="hero-light flex items-center justify-center pt-16 sm:pt-20">
         <!-- Animated Gradient Mesh Background -->
         <div class="gradient-mesh">
           <div class="orb orb-1"></div>
@@ -74,30 +281,30 @@
         </div>
 
         <div class="hero-content max-w-4xl mx-auto px-4 sm:px-6 py-20 sm:py-28 md:py-32 text-center">
-          <!-- Glassmorphism Badge -->
-          <div class="glass-badge mb-10">
+          <!-- Light Glassmorphism Badge -->
+          <div class="glass-badge-light mb-10">
             <span class="dot"></span>
             <span>Sobre Nosotros</span>
           </div>
 
-          <p class="text-xs uppercase tracking-[0.3em] text-white/40 mb-6">Nuestra Misión</p>
+          <p class="text-xs uppercase tracking-[0.3em] text-deep-blue/40 mb-6">Nuestra Misión</p>
 
-          <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-8 leading-tight tracking-tight max-w-3xl mx-auto">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-ink mb-8 leading-tight tracking-tight max-w-3xl mx-auto">
             Convertir la inteligencia artificial en una capacidad operativa real para las organizaciones de América Latina.
           </h1>
 
-          <p class="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <p class="text-ink/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             En QIPU creemos que la IA no es un fin, sino un medio para tomar mejores decisiones y ejecutar con mayor precisión. Nuestra misión es cerrar la brecha entre la promesa de la IA y su impacto real en el negocio.
           </p>
         </div>
       </section>
 
-      <!-- Values Section -->
-      <section class="features-section">
+      <!-- Values Section - Light -->
+      <section class="values-light">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
           <div class="text-center mb-16">
-            <p class="text-xs uppercase tracking-[0.3em] text-periwinkle/50 mb-4">Lo que creemos</p>
-            <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight">Nuestros Principios</h2>
+            <p class="text-xs uppercase tracking-[0.3em] text-deep-blue/40 mb-4">Lo que creemos</p>
+            <h2 class="text-3xl md:text-4xl font-semibold text-ink tracking-tight">Nuestros Principios</h2>
           </div>
 
           <div class="features-typography">
@@ -124,8 +331,8 @@
       </section>
 
       <!-- Founders Section -->
-      <section id="equipo" class="py-24 bg-fog">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <section id="equipo" class="founders-section py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
           <div class="text-center mb-16">
             <p class="text-xs uppercase tracking-[0.3em] text-deep-blue/40 mb-4">El Equipo</p>
             <h2 class="text-3xl md:text-4xl font-semibold text-ink tracking-tight">Quiénes Somos</h2>
@@ -175,7 +382,7 @@
         </div>
       </section>
 
-      <!-- CTA Section with Gradient Mesh -->
+      <!-- CTA Section - Dark Contrast -->
       <section id="contacto" class="cta-aurora py-28 md:py-36">
         <!-- Animated Gradient Mesh Background -->
         <div class="gradient-mesh">
