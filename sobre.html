@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre Qipu — Estrategia ejecutable de IA</title>
+    <meta
+      name="description"
+      content="Conoce al equipo detrás de QIPU y nuestra misión de convertir la IA en capacidad operativa real."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#1A1A1A",
+              fog: "#F7F7F3",
+              stone: "#E7E7E2",
+              "deep-blue": "#0014b0",
+              periwinkle: "#d6e3ff",
+              amber: {
+                300: "#ffb366",
+                400: "#ff9f40",
+                500: "#ff8c42",
+              },
+              orange: {
+                500: "#ff6b35",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="site-grid bg-fog text-ink antialiased">
+    <!-- Fixed Header with Glass Effect -->
+    <header class="dark-header fixed top-0 left-0 right-0 z-50">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+        <a href="./" class="flex items-center">
+          <img src="./qipu_logos/4.png" alt="QIPU" class="h-10 sm:h-14 md:h-[4.5rem]" />
+        </a>
+        <nav class="flex items-center gap-4 sm:gap-6">
+          <a href="./sobre.html" class="text-white hover:text-white/80 text-sm transition-colors">Sobre Qipu</a>
+          <a
+            class="btn-primary text-xs sm:text-sm py-2 px-4 sm:px-5"
+            href="./#contacto"
+          >
+            Hablar con QIPU
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section - Mission -->
+      <section class="hero-section flex items-center justify-center pt-16 sm:pt-20">
+        <!-- Animated Gradient Mesh Background -->
+        <div class="gradient-mesh">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="orb orb-4"></div>
+        </div>
+
+        <div class="hero-content max-w-4xl mx-auto px-4 sm:px-6 py-20 sm:py-28 md:py-32 text-center">
+          <!-- Glassmorphism Badge -->
+          <div class="glass-badge mb-10">
+            <span class="dot"></span>
+            <span>Sobre Nosotros</span>
+          </div>
+
+          <p class="text-xs uppercase tracking-[0.3em] text-white/40 mb-6">Nuestra Misión</p>
+
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-8 leading-tight tracking-tight max-w-3xl mx-auto">
+            Convertir la inteligencia artificial en una capacidad operativa real para las organizaciones de América Latina.
+          </h1>
+
+          <p class="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            En QIPU creemos que la IA no es un fin, sino un medio para tomar mejores decisiones y ejecutar con mayor precisión. Nuestra misión es cerrar la brecha entre la promesa de la IA y su impacto real en el negocio.
+          </p>
+        </div>
+      </section>
+
+      <!-- Values Section -->
+      <section class="features-section">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+          <div class="text-center mb-16">
+            <p class="text-xs uppercase tracking-[0.3em] text-periwinkle/50 mb-4">Lo que creemos</p>
+            <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight">Nuestros Principios</h2>
+          </div>
+
+          <div class="features-typography">
+            <!-- Value 1 -->
+            <div class="feature-row">
+              <div class="feature-number">01</div>
+              <div class="feature-word">Claridad</div>
+              <div class="feature-desc">La complejidad es el enemigo de la ejecución. Nuestro trabajo es traducir la ambigüedad en decisiones claras y accionables.</div>
+            </div>
+            <!-- Value 2 -->
+            <div class="feature-row">
+              <div class="feature-number">02</div>
+              <div class="feature-word">Pragmatismo</div>
+              <div class="feature-desc">No vendemos futuro. Diseñamos estrategias que se ejecutan hoy, con los recursos y restricciones reales de cada organización.</div>
+            </div>
+            <!-- Value 3 -->
+            <div class="feature-row">
+              <div class="feature-number">03</div>
+              <div class="feature-word">Honestidad</div>
+              <div class="feature-desc">Decimos lo que pensamos, incluso cuando no es lo que el cliente quiere escuchar. La confianza se construye con verdad, no con complacencia.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Founders Section -->
+      <section id="equipo" class="py-24 bg-fog">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="text-center mb-16">
+            <p class="text-xs uppercase tracking-[0.3em] text-deep-blue/40 mb-4">El Equipo</p>
+            <h2 class="text-3xl md:text-4xl font-semibold text-ink tracking-tight">Quiénes Somos</h2>
+          </div>
+
+          <div class="grid gap-8 sm:grid-cols-2 max-w-3xl mx-auto">
+            <!-- Founder 1 -->
+            <div class="founder-card group">
+              <div class="aspect-square bg-gradient-to-br from-deep-blue to-deep-blue/80 rounded-2xl mb-6 overflow-hidden relative">
+                <!-- Placeholder pattern -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-24 h-24 rounded-full bg-periwinkle/20 flex items-center justify-center">
+                    <span class="text-4xl font-semibold text-white/60">F1</span>
+                  </div>
+                </div>
+                <!-- Decorative elements -->
+                <div class="absolute top-4 right-4 w-16 h-16 border border-periwinkle/20 rounded-full"></div>
+                <div class="absolute bottom-4 left-4 w-12 h-12 bg-amber-500/20 rounded-full blur-xl"></div>
+              </div>
+              <h3 class="text-xl font-semibold text-ink mb-1">[Nombre Fundador 1]</h3>
+              <p class="text-deep-blue font-medium text-sm mb-3">Co-Fundador</p>
+              <p class="text-ink/60 text-sm leading-relaxed">
+                [Breve descripción del background y experiencia. Empresas anteriores, áreas de especialización, etc.]
+              </p>
+            </div>
+
+            <!-- Founder 2 -->
+            <div class="founder-card group">
+              <div class="aspect-square bg-gradient-to-br from-deep-blue to-deep-blue/80 rounded-2xl mb-6 overflow-hidden relative">
+                <!-- Placeholder pattern -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-24 h-24 rounded-full bg-periwinkle/20 flex items-center justify-center">
+                    <span class="text-4xl font-semibold text-white/60">F2</span>
+                  </div>
+                </div>
+                <!-- Decorative elements -->
+                <div class="absolute top-4 right-4 w-16 h-16 border border-periwinkle/20 rounded-full"></div>
+                <div class="absolute bottom-4 left-4 w-12 h-12 bg-amber-500/20 rounded-full blur-xl"></div>
+              </div>
+              <h3 class="text-xl font-semibold text-ink mb-1">[Nombre Fundador 2]</h3>
+              <p class="text-deep-blue font-medium text-sm mb-3">Co-Fundador</p>
+              <p class="text-ink/60 text-sm leading-relaxed">
+                [Breve descripción del background y experiencia. Empresas anteriores, áreas de especialización, etc.]
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section with Gradient Mesh -->
+      <section id="contacto" class="cta-aurora py-28 md:py-36">
+        <!-- Animated Gradient Mesh Background -->
+        <div class="gradient-mesh">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <h2 class="text-3xl md:text-5xl font-semibold text-white mb-6 leading-tight tracking-tight">
+            ¿Listo para convertir la IA en capacidad real?
+          </h2>
+          <p class="text-white/50 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+            Conversemos sobre cómo podemos ayudar a tu organización a tomar mejores decisiones y ejecutar con precisión.
+          </p>
+          <a href="./#contacto" class="btn-primary text-base">
+            Agendar conversación
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="dark-footer py-8 sm:py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6 sm:mb-8">
+          <a href="./" class="flex items-center">
+            <img src="./qipu_logos/4.png" alt="QIPU" class="h-8 sm:h-10" />
+          </a>
+          <p class="text-white/40 text-sm">Estrategia y ejecución en IA</p>
+        </div>
+        <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p class="text-white/30 text-xs tracking-wide">© 2026 QIPU. Todos los derechos reservados.</p>
+          <p class="text-white/40 text-xs tracking-[0.2em] uppercase">ECU • BRA • MEX</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
